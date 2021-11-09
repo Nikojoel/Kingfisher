@@ -24,9 +24,9 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#if canImport(SwiftUI) && canImport(Combine)
-import SwiftUI
+#if !(os(iOS) && (arch(i386) || arch(arm)))
 import Combine
+import SwiftUI
 
 @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 extension KFImage {
